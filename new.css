@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Varela Round", "Quicksand", sans-serif;
+  background: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 0, 0);
+}
+
+.postcard {
+  width: 90%; /* Gunakan persentase agar responsif */
+  max-width: 800px; /* Batasi ukuran maksimal */
+  height: auto; /* Biarkan tingginya mengikuti konten */
+  background: rgba(255, 255, 255, 0.101);
+  
+  margin: 50px auto; /* Pastikan tetap di tengah */
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column; /* Agar isi dalamnya lebih rapi */
+  justify-content: center;
+  align-items: center; /* Teks di dalam tetap di tengah */
+  padding: 2em;
+  box-shadow: 0.8em 0.8em 15px rgba(0, 0, 0, 0.3);
+  transform: rotate(0deg); /* Hapus rotasi agar rapi di HP */
+}
+
+
+.postcard1 {
+  width: 70%; /* Ikuti ukuran .postcard */
+  max-width: 500px;
+  height: auto;
+  background: #f594b862;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Buat benar-benar di tengah */
+  -webkit-filter: blur(2px);
+  z-index: -1;
+  border-radius: 2%;
+  box-shadow: 0.8em 0.8em 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  font-size: 4.5em;
+  color: #fdfdfd;
+  margin-bottom: 5px;
+}
+
+/*animation*/
+.postcard:hover,
+.postcard:active,
+.postcard:focus {
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.mail_stamp {
+  width: 100px;
+  float: right;
+}
+
+.push {
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+
+/*footer*/
+footer {
+  margin: 2em auto;
+  text-align: center;
+  font-family: "Varela Round", "Quicksand", sans-serif;
+  color: white;
+}
+
+footer p {
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+p span {
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+  color: #800020;
+}
+p {
+  font-size: 22px;
+  font-family: cursive;
+  font-weight: 540;
+  color: rgb(255, 255, 255); /* Warna teks utama gelap */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 
+               0 0 10px rgba(255, 255, 255, 0.4); /* Efek cahaya */
+}
+
+p {
+  font-size: 22px;
+  font-family: cursive;
+  font-weight: 540;
+}
+.ullu {
+  font-size: 25px;
+
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+}
